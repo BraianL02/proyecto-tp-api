@@ -8,6 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_header.css">
     <style>
         .btn-animate {
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -23,10 +26,36 @@
 </head>
 
 <body>
-    <header id="header">
-        <!-- Coloca la barra de navegación aquí -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <div class="imglogo">
+                    <a href="index.html">
+                        <img src="notec_logo.svg" alt="logo notec" class="lgzoom ">
+                    </a>
+                </div>
+                <!-- <h1><a href="index.html" class="t2_a hover3"> no<b>T</b>ec</a></h1> -->
+            </div>
+            <input type="checkbox" id="menu-check">
+            <label id="menuH" for="menu-check">
+                <span id="menuH-abrir">&#9776;</span>
+                <span id="menuH-cerrar">X</span>
+            </label>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li class="ocultar"></li>
+                        <li><a href="index.html" style="text-decoration: none;">Inicio</a></li>
+                        <li><a href="index.html #blog" style="text-decoration: none;">Blog</a></li>
+                        <li class="menu-selected"><a href="" class="text-menu-selected" style="text-decoration: none;">Productos</a></li>
+                        <li class="ult"><a href="contact/contact.html" style="text-decoration: none;">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
-    <main>
+    <main style="margin-top: 100px; margin-bottom: 120px;">
         <div id="app" class="container">
             <h1>Productos</h1>
             <br>
@@ -82,17 +111,31 @@
         </div>
     </main>
     <footer>
-        <!-- Coloca aquí el contenido del pie de página -->
+        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter fa-xl"></i></a>
+        <a href="https://github.com" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+        <a href="contact/contact.html">Contacto</a>
     </footer>
-    <!-- Enlace de Bootstrap -->
+
+    <!-- js -->
+    <script src="https://kit.fontawesome.com/97e4681e3a.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script>
+        setInterval(function () {
+            document.getElementsByClassName("next")[0].click();
+        }, 5000);
+    </script>
+
+    <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-        crossorigin="anonymous"></script>
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
     <script src="./js/main.js"></script>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Enlace de VUE-->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./js/productos.js"></script>
 </body>
 
